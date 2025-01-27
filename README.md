@@ -13,12 +13,12 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 - Framework Angular
 
 # Backlog do Produto
-Como usuário, eu gostaria de criar uma conta na aplicação.
-Como usuário, eu gostaria de fazer login em minha conta.
-Como usuário, eu gostaria de criar um novo registro doméstico.
-Como usuário, eu gostaria de inserir uma nova despesa no registro.
-Como usuário, eu gostaria de editar uma despesa que foi inserida, para fins de correção.
-Como usuário, eu gostaria de inserir uma nova renda no registro.
-Como usuário, eu gostaria de editar uma renda que foi inserida, para fins de correção.
-Como usuário, eu gostaria de ver as minhas despesas ao longo da semana.
-Como usuário, eu gostaria adicionar novas tarefas domésticas, como comprar produtos ou resolver pendências.
+- Como usuário, eu gostaria de criar uma conta na aplicação.
+- Como usuário, eu gostaria de fazer login em minha conta.
+- Como usuário, eu gostaria de criar um novo registro doméstico.
+- Como usuário, eu gostaria de inserir uma nova despesa no registro.
+- Como usuário, eu gostaria de editar uma despesa que foi inserida, para fins de correção.
+- Como usuário, eu gostaria de inserir uma nova renda no registro.
+- Como usuário, eu gostaria de editar uma renda que foi inserida, para fins de correção.
+- Como usuário, eu gostaria de ver as minhas despesas ao longo da semana.
+- Como usuário, eu gostaria adicionar novas tarefas domésticas, como comprar produtos ou resolver pendências.
