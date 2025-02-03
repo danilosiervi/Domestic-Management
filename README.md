@@ -58,3 +58,28 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 28. Como usuário, eu gostaria de criar um novo registro doméstico para acompanhar as atividades da casa.  
 29. Como usuário, eu gostaria de adicionar novas tarefas domésticas, como comprar produtos ou resolver pendências.  
 
+
+# **Backlog da Sprint**  
+
+## **Gerenciamento de Tarefas**  
+
+### **História #1: Como admin, eu gostaria de criar tarefas para organizar as responsabilidades da casa.**  
+#### **Tarefas e responsáveis:**  
+✅ Instalar banco de dados e criar primeiras tabelas **[Nathan]**  
+✅ Instalar o node.js e o sap UI5 **[Iury]**  
+✅ Criar modelo de dados para tarefas no banco de dados **[Mateus]**  
+✅ Implementar API para criação de tarefas **[Matheus]**  
+✅ Criar interface para criação de tarefas **[Iury]**  
+
+### **História #2: Como admin, eu gostaria de designar tarefas para moradores específicos.**  
+#### **Tarefas e responsáveis:**  
+✅ Adicionar campo de responsável na tabela de tarefas **[Danilo]**  
+✅ Implementar lógica de atribuição no backend **[Nathan]**  
+✅ Ajustar interface para permitir a designação de tarefas **[Matheus]**  
+
+### **História #3: Como usuário, eu gostaria de puxar tarefas livres para contribuir com a organização da casa.**  
+#### **Tarefas e responsáveis:**  
+✅ Criar endpoint para listar tarefas disponíveis **[Mateus]**  
+✅ Implementar botão para puxar tarefa no frontend **[Danilo]**  
+
+
