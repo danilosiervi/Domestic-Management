@@ -9,8 +9,8 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 - Nathan Almeida Rezende
 
 # Tecnologias
-- Linguagem JavaScript
-- Framework Angular
+- HTML, CSS e JavaScript
+- Framework SAP UI5
 
 # Backlog do Produto
 - Como usuário, eu gostaria de criar uma conta na aplicação.
