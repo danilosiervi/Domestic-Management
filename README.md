@@ -90,3 +90,7 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 
 # **Protótipo (Figma)**
 Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prototype?t=hgdihqDdCtlQvtqy-1>
+
+# **Diagramas UML**
+
+## **Diagrama UML (Casos de uso)** 
