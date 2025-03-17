@@ -94,3 +94,5 @@ Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prot
 # **Diagramas UML**
 
 ## **Diagrama UML (Casos de uso)** 
+
+<img src="Diagramas-UML/Diagrama Casos de uso.png" alt="Diagrama UML de casos de uso">
