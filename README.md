@@ -82,5 +82,11 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 ✅ Criar endpoint para listar tarefas disponíveis **[Mateus]**  
 ✅ Implementar botão para puxar tarefa no frontend **[Danilo]**  
 
+### **História #4: Como usuário, eu gostaria de puxar tarefas incompletas de outros usuarios para contribuir com a organização da casa.** 
+#### **Tarefas e responsáveis:**
+
+### **História #5: Como admin, eu gostaria de criar tarefas em conjunto para organizar as responsabilidades da casa.**
+#### **Tarefas e responsáveis:**
+
 # **Protótipo (Figma)**
 Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prototype?t=hgdihqDdCtlQvtqy-1>
