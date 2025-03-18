@@ -95,10 +95,10 @@ Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prot
 
 ## **Diagrama UML (Casos de uso)** 
 
-<img src="Diagramas-UML/Diagrama Casos de uso.png" alt="Diagrama UML de casos de uso"  width="1300" height="780">
+<img src="Diagramas-UML/Diagrama-CasosDeUso.png" alt="Diagrama UML de casos de uso" >
 
 ## **Diagrama UML (Atividades)**
 
 ### **Diagrama de Atividades (Criar Tarefas)** 
 
-<img src="Diagramas-UML/Diagrama-UML-Atividades-Criar-Tarefa.png" alt="Diagrama de Atividades (Criar Tarefas)" width="1300" height="780">
+<img src="Diagramas-UML/Diagrama-Atividades(Criar-Tarefa).png" alt="Diagrama de Atividades (Criar Tarefas)">
