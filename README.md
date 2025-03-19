@@ -109,6 +109,6 @@ Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prot
 
 ### **Diagrama de Atividades (Designar Tarefa)**
 
-<img src="Diagramas-UML/Diagrama-Atividades(Designar-Tarefa).png" alt="Diagrama de Atividades (Designar Tarefas)" align="middle">
+<img src="Diagramas-UML/Diagrama-Atividades(Designar-Tarefa).png" alt="Diagrama de Atividades (Designar Tarefas)">
 
 ## **Diagrama UML (Classes)** 
