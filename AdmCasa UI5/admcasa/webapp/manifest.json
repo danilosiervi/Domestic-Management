@@ -1,0 +1,126 @@
+{
+    "_version": "1.65.0",
+    "sap.app": {
+        "id": "br.com.admcasa.admcasa",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.16.5",
+            "toolsId": "fdd6043b-6973-482d-9aad-148b9ffad18c"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "async": true,
+        "rootView": {
+            "viewName": "br.com.admcasa.admcasa.view.App",
+            "type": "XML",
+            "id": "App",
+            "async": true
+        },
+        "dependencies": {
+            "minUI5Version": "1.133.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "br.com.admcasa.admcasa.i18n.i18n"
+                },
+				"preload": true
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "transition": "slide",
+                "type": "View",
+                "viewType": "XML",
+                "path": "br.com.admcasa.admcasa.view",
+                "async": true,
+                "viewPath": "br.com.admcasa.admcasa.view",
+				"clearControlAggregation": false,
+				"bypassed": {
+					"target": "notFound"
+				}
+            },
+            "routes": [
+                {
+					"name": "Home",
+					"pattern": "",
+					"target": [
+						"TargetHome"
+					]
+				},
+				{
+                    "name": "RouteApp",
+                    "pattern": ":?query:",
+                    "target": [
+                        "TargetApp"
+                    ]
+                }
+            ],
+            "targets": {
+                "TargetHome": {
+					"viewType": "XML",
+					"transition": "fade",
+					"clearControlAggregation": false,
+					"viewId": "Home",
+					"viewName": "Home",
+					"viewLevel": 2
+				},
+                "TargetApp": {
+                    "id": "App",
+                    "name": "App"
+                },
+				"notFound": {
+					"viewId": "notFound",
+					"viewName": "NotFound",
+					"transition": "show"
+				}
+            }
+        }
+        
+    }
+}

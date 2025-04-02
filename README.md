@@ -82,4 +82,35 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 ✅ Criar endpoint para listar tarefas disponíveis **[Mateus]**  
 ✅ Implementar botão para puxar tarefa no frontend **[Danilo]**  
 
+### **História #4: Como usuário, eu gostaria de puxar tarefas incompletas de outros usuarios para contribuir com a organização da casa.** 
+#### **Tarefas e responsáveis:**
 
+### **História #5: Como admin, eu gostaria de criar tarefas em conjunto para organizar as responsabilidades da casa.**
+#### **Tarefas e responsáveis:**
+
+# **Protótipo (Figma)**
+Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prototype?t=hgdihqDdCtlQvtqy-1>
+
+# **Diagramas UML**
+
+## **Diagrama UML (Casos de uso)** 
+
+<img src="Diagramas-UML/Diagrama-CasosDeUso.png" alt="Diagrama UML de casos de uso" >
+
+## **Diagrama UML (Atividades)**
+
+### **Diagrama de Atividades (Criar Tarefas)** 
+
+<img src="Diagramas-UML/Diagrama-Atividades(Criar-Tarefa).png" alt="Diagrama de Atividades (Criar Tarefas)">
+
+### **Diagrama de Atividades (Puxar Tarefas)**
+
+<img src="Diagramas-UML/Diagrama-Atividades(Puxar-Tarefa).png" alt="Diagrama de Atividades (Puxar Tarefas)">
+
+### **Diagrama de Atividades (Designar Tarefa)**
+
+<img src="Diagramas-UML/Diagrama-Atividades(Designar-Tarefa).png" alt="Diagrama de Atividades (Designar Tarefas)">
+
+## **Diagrama UML (Classes)** 
+
+<img src="Diagramas-UML/Diagrama-de-Classes.png" alt="Diagrama de Classes">
