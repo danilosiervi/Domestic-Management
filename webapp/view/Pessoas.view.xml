@@ -1,0 +1,177 @@
+<mvc:View
+	controllerName="br.com.admcasa.admcasa.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns:semantic="sap.m.semantic"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:tnt="sap.tnt"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+>
+	<App id="app">
+		<pages>
+			<semantic:FullscreenPage id="page" showFooter="true" class="textFade">
+				<tnt:ToolHeader id="homeHeader">
+					<Button id="logonBtn" text="Login " type="Transparent" press="handleConnect"
+						icon="sap-icon://visits" />
+					<ToolbarSpacer />
+					<Title id="homeTitle" level="H1" class="bold sapUiMediumMarginEnd"
+						text="{i18n>HomeTitle}" />
+					<ToolbarSpacer />
+					<core:Icon
+						class="sapUiTinyMarginEnd"
+						id="conectIcon"
+						src="sap-icon://overlay"
+						color="#B22202" />
+				</tnt:ToolHeader>
+				<semantic:content>
+					<Panel width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar height="3rem" class="homeBar sapUiTinyMarginTopBottom">
+								<Button id="syncBtn" tooltip="Atualizar Tabelas"
+									icon="sap-icon://synchronize" type="Transparent"
+									press="handleRefresh" enabled="false" />
+								<Title text="Pessoas" class="separatorText" />
+								<ToolbarSpacer />
+								<Button class="italic" id="BtnUserEnv" tooltip="Usuário" text=""
+									type="Transparent" press="handleBtnUser" enabled="false" />
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<l:BlockLayout
+								id="BlockLayout"
+								background="Default">
+								<l:BlockLayoutRow>
+									<l:BlockLayoutCell
+										backgroundColorSet="ColorSet11"
+										backgroundColorShade="ShadeD"
+									>
+										<l:VerticalLayout>
+											<core:Icon
+												src="sap-icon://role"
+												size="1.5rem"
+												color="Default" />
+											<Title
+												id="pessoa1Tile"
+												text="João"
+												level="H3"
+												titleStyle="H3"
+												class="sapUiTinyMarginTopBottom" />
+											<Text
+												text="{i18n>administrationContent}"
+												class="sapUiTinyMarginBottom"
+												size="0.8rem"
+											/>
+										</l:VerticalLayout>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell
+										backgroundColorSet="ColorSet11"
+										backgroundColorShade="ShadeD"
+									>
+										<l:VerticalLayout>
+											<core:Icon
+												src="sap-icon://role"
+												size="1.5rem"
+												color="Default" />
+											<Title
+												id="pessoa2Tile"
+												text="Maria"
+												level="H3"
+												titleStyle="H3"
+												class="sapUiTinyMarginTopBottom" />
+											<Text
+												text="{i18n>administrationContent}"
+												class="sapUiTinyMarginBottom"
+												size="0.8rem"
+											/>
+										</l:VerticalLayout>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell
+										backgroundColorSet="ColorSet11"
+										backgroundColorShade="ShadeD"
+									>
+										<l:VerticalLayout>
+											<core:Icon
+												src="sap-icon://role"
+												size="1.5rem"
+												color="Default" />
+											<Title
+												id="pessoa3Tile"
+												text="Pedro"
+												level="H3"
+												titleStyle="H3"
+												class="sapUiTinyMarginTopBottom" />
+											<Text
+												text="{i18n>administrationContent}"
+												class="sapUiTinyMarginBottom"
+												size="0.8rem"
+											/>
+										</l:VerticalLayout>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell
+										backgroundColorSet="ColorSet11"
+										backgroundColorShade="ShadeD"
+									>
+										<l:VerticalLayout>
+											<core:Icon
+												src="sap-icon://role"
+												size="1.5rem"
+												color="Default" />
+											<Title
+												id="pessoa4Tile"
+												text="Ana"
+												level="H3"
+												titleStyle="H3"
+												class="sapUiTinyMarginTopBottom" />
+											<Text
+												text="{i18n>administrationContent}"
+												class="sapUiTinyMarginBottom"
+												size="0.8rem"
+											/>
+										</l:VerticalLayout>
+									</l:BlockLayoutCell>
+									<l:BlockLayoutCell
+										backgroundColorSet="ColorSet11"
+										backgroundColorShade="ShadeD"
+									>
+										<l:VerticalLayout>
+											<core:Icon
+												src="sap-icon://role"
+												size="1.5rem"
+												color="Default" />
+											<Title
+												id="pessoa5Tile"
+												text="Ana"
+												level="H3"
+												titleStyle="H3"
+												class="sapUiTinyMarginTopBottom" />
+											<Text
+												text="{i18n>administrationContent}"
+												class="sapUiTinyMarginBottom"
+												size="0.8rem"
+											/>
+										</l:VerticalLayout>
+									</l:BlockLayoutCell>
+								</l:BlockLayoutRow>
+							</l:BlockLayout>
+						</content>
+					</Panel>
+				</semantic:content>
+				<semantic:customFooterContent>
+					<HBox id="footerHBox" justifyContent="SpaceAround" alignItems="Center"
+						class="sapUiSmallMarginBeginEnd" width="100%">
+						<Button id="ItensBtn" text="{i18n>Itens}" type="Default" press="handleItems"
+							icon="sap-icon://fridge" />
+						<Button id="TarefasBtn" text="{i18n>Tarefas}" type="Transparent"
+							press="handleTasks" icon="sap-icon://activities" />
+						<Button id="PessoasBtn" text="{i18n>Pessoas}" type="Transparent"
+							press="handlePersons" icon="sap-icon://family-care" />
+					</HBox>
+				</semantic:customFooterContent>
+				<Button id="AdicionarBtn" text="{i18n>Adicionar}" type="Transparent"
+				press="handlePersons" icon="sap-icon://family-care" />
+			</semantic:FullscreenPage>
+		</pages>
+	</App>
+</mvc:View>
