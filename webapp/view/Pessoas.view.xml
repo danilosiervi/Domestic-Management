@@ -49,7 +49,7 @@
 									>
 										<l:VerticalLayout>
 											<core:Icon
-												src="sap-icon://role"
+												src="sap-icon://person-placeholder"
 												size="1.5rem"
 												color="Default" />
 											<Title
@@ -59,9 +59,9 @@
 												titleStyle="H3"
 												class="sapUiTinyMarginTopBottom" />
 											<Text
-												text="{i18n>administrationContent}"
+												text="Geralmente responsável pelas compras."
 												class="sapUiTinyMarginBottom"
-												size="0.8rem"
+												size="0.6rem"
 											/>
 										</l:VerticalLayout>
 									</l:BlockLayoutCell>
@@ -71,7 +71,7 @@
 									>
 										<l:VerticalLayout>
 											<core:Icon
-												src="sap-icon://role"
+												src="sap-icon://person-placeholder"
 												size="1.5rem"
 												color="Default" />
 											<Title
@@ -81,9 +81,9 @@
 												titleStyle="H3"
 												class="sapUiTinyMarginTopBottom" />
 											<Text
-												text="{i18n>administrationContent}"
+												text="Cuida do jardim aos sábados. Leva o cachorro para passear."
 												class="sapUiTinyMarginBottom"
-												size="0.8rem"
+												size="0.6rem"
 											/>
 										</l:VerticalLayout>
 									</l:BlockLayoutCell>
@@ -93,7 +93,7 @@
 									>
 										<l:VerticalLayout>
 											<core:Icon
-												src="sap-icon://role"
+												src="sap-icon://person-placeholder"
 												size="1.5rem"
 												color="Default" />
 											<Title
@@ -103,9 +103,9 @@
 												titleStyle="H3"
 												class="sapUiTinyMarginTopBottom" />
 											<Text
-												text="{i18n>administrationContent}"
+												text="Cuida dos irmãos no fim de semana e leva eles pra escola."
 												class="sapUiTinyMarginBottom"
-												size="0.8rem"
+												size="0.6rem"
 											/>
 										</l:VerticalLayout>
 									</l:BlockLayoutCell>
@@ -115,19 +115,19 @@
 									>
 										<l:VerticalLayout>
 											<core:Icon
-												src="sap-icon://role"
+												src="sap-icon://person-placeholder"
 												size="1.5rem"
 												color="Default" />
 											<Title
 												id="pessoa4Tile"
-												text="Ana"
+												text="Lucas"
 												level="H3"
 												titleStyle="H3"
 												class="sapUiTinyMarginTopBottom" />
 											<Text
-												text="{i18n>administrationContent}"
+												text="..."
 												class="sapUiTinyMarginBottom"
-												size="0.8rem"
+												size="0.6rem"
 											/>
 										</l:VerticalLayout>
 									</l:BlockLayoutCell>
@@ -137,7 +137,7 @@
 									>
 										<l:VerticalLayout>
 											<core:Icon
-												src="sap-icon://role"
+												src="sap-icon://person-placeholder"
 												size="1.5rem"
 												color="Default" />
 											<Title
@@ -147,9 +147,9 @@
 												titleStyle="H3"
 												class="sapUiTinyMarginTopBottom" />
 											<Text
-												text="{i18n>administrationContent}"
+												text="..."
 												class="sapUiTinyMarginBottom"
-												size="0.8rem"
+												size="0.6rem"
 											/>
 										</l:VerticalLayout>
 									</l:BlockLayoutCell>
@@ -170,7 +170,7 @@
 					</HBox>
 				</semantic:customFooterContent>
 				<Button id="AdicionarBtn" text="{i18n>Adicionar}" type="Transparent"
-				press="handlePersons" icon="sap-icon://family-care" />
+				press="handlePersons" icon="sap-icon://family-care"/>
 			</semantic:FullscreenPage>
 		</pages>
 	</App>
