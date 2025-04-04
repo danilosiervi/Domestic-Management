@@ -119,3 +119,5 @@ Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prot
 ## **Diagrama UML (Classes)** 
 
 <img src="Diagramas-UML/Diagrama-de-Classes.png" alt="Diagrama de Classes">
+
+
