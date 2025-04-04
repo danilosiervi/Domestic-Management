@@ -1,0 +1,70 @@
+<mvc:View
+        controllerName="br.com.admcasa.admcasa.controller.Home"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true"
+        xmlns:semantic="sap.m.semantic"
+        xmlns:tnt="sap.tnt"
+        xmlns="sap.m"
+        xmlns:l="sap.ui.layout"
+        xmlns:core="sap.ui.core"
+>
+    <App id="app">
+        <pages>
+            <semantic:FullscreenPage id="page" showFooter="true" class="textFade">
+                <tnt:ToolHeader id="homeHeader">
+                    <Title id="homeTitle" level="H1" class="bold sapUiMediumMarginEnd" text="Domestic Manager" />
+                    <ToolbarSpacer />
+                    <Button id="homeBtn" text="Home" type="Transparent" press="handleHome" />
+                    <Button id="itemsBtn" text="Itens" type="Emphasized" press="handleItems" />
+                    <Button id="tasksBtn" text="Tarefas" type="Transparent" press="handleTasks" />
+                    <Button id="peopleBtn" text="Pessoas" type="Transparent" press="handlePersons" />
+                </tnt:ToolHeader>
+
+                <semantic:content>
+                    <Panel width="auto" class="sapUiResponsiveMargin">
+                        <Title text="Itens" level="H2" class="sapUiMediumMargin" />
+                        <FlexBox wrap="Wrap" justifyContent="Start" class="sapUiSmallMargin">
+                            <GenericTile class="itemTile" header="Arroz (1 kg)">
+                                <TileContent>
+                                    <NumericContent value="x1" />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile class="itemTile" header="Cerveja">
+                                <TileContent>
+                                    <NumericContent value="x10" />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile class="itemTile" header="Desinfetante">
+                                <TileContent>
+                                    <NumericContent value="x2" />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile class="itemTile" header="Sabonete">
+                                <TileContent>
+                                    <NumericContent value="x3" />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile class="itemTile" header="Ovos">
+                                <TileContent>
+                                    <NumericContent value="x11" />
+                                </TileContent>
+                            </GenericTile>
+
+                            <GenericTile class="itemTile" header="Detergente">
+                                <TileContent>
+                                    <NumericContent value="x3" />
+                                </TileContent>
+                            </GenericTile>
+                        </FlexBox>
+                    </Panel>
+                </semantic:content>
+
+                <Button id="addBtn" icon="sap-icon://add" type="Emphasized" class="addButton" press="handleAddItem"/>
+            </semantic:FullscreenPage>
+        </pages>
+    </App>
+</mvc:View>
