@@ -27,135 +27,58 @@
 				</tnt:ToolHeader>
 				<semantic:content>
 					<Panel width="auto" class="sapUiResponsiveMargin">
-						<headerToolbar>
-							<OverflowToolbar height="3rem" class="homeBar sapUiTinyMarginTopBottom">
-								<Button id="syncBtn" tooltip="Atualizar Tabelas"
-									icon="sap-icon://synchronize" type="Transparent"
-									press="handleRefresh" enabled="false" />
-								<Title text="Pessoas" class="separatorText" />
-								<ToolbarSpacer />
-								<Button class="italic" id="BtnUserEnv" tooltip="Usuário" text=""
-									type="Transparent" press="handleBtnUser" enabled="false" />
-							</OverflowToolbar>
-						</headerToolbar>
-						<content>
-							<l:BlockLayout
-								id="BlockLayout"
-								background="Default">
-								<l:BlockLayoutRow>
-									<l:BlockLayoutCell
-										backgroundColorSet="ColorSet11"
-										backgroundColorShade="ShadeD"
-									>
-										<l:VerticalLayout>
-											<core:Icon
-												src="sap-icon://person-placeholder"
-												size="1.5rem"
-												color="Default" />
-											<Title
-												id="pessoa1Tile"
-												text="João"
-												level="H3"
-												titleStyle="H3"
-												class="sapUiTinyMarginTopBottom" />
-											<Text
-												text="Geralmente responsável pelas compras."
-												class="sapUiTinyMarginBottom"
-												size="0.6rem"
-											/>
-										</l:VerticalLayout>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										backgroundColorSet="ColorSet11"
-										backgroundColorShade="ShadeD"
-									>
-										<l:VerticalLayout>
-											<core:Icon
-												src="sap-icon://person-placeholder"
-												size="1.5rem"
-												color="Default" />
-											<Title
-												id="pessoa2Tile"
-												text="Maria"
-												level="H3"
-												titleStyle="H3"
-												class="sapUiTinyMarginTopBottom" />
-											<Text
-												text="Cuida do jardim aos sábados. Leva o cachorro para passear."
-												class="sapUiTinyMarginBottom"
-												size="0.6rem"
-											/>
-										</l:VerticalLayout>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										backgroundColorSet="ColorSet11"
-										backgroundColorShade="ShadeD"
-									>
-										<l:VerticalLayout>
-											<core:Icon
-												src="sap-icon://person-placeholder"
-												size="1.5rem"
-												color="Default" />
-											<Title
-												id="pessoa3Tile"
-												text="Pedro"
-												level="H3"
-												titleStyle="H3"
-												class="sapUiTinyMarginTopBottom" />
-											<Text
-												text="Cuida dos irmãos no fim de semana e leva eles pra escola."
-												class="sapUiTinyMarginBottom"
-												size="0.6rem"
-											/>
-										</l:VerticalLayout>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										backgroundColorSet="ColorSet11"
-										backgroundColorShade="ShadeD"
-									>
-										<l:VerticalLayout>
-											<core:Icon
-												src="sap-icon://person-placeholder"
-												size="1.5rem"
-												color="Default" />
-											<Title
-												id="pessoa4Tile"
-												text="Lucas"
-												level="H3"
-												titleStyle="H3"
-												class="sapUiTinyMarginTopBottom" />
-											<Text
-												text="..."
-												class="sapUiTinyMarginBottom"
-												size="0.6rem"
-											/>
-										</l:VerticalLayout>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell
-										backgroundColorSet="ColorSet11"
-										backgroundColorShade="ShadeD"
-									>
-										<l:VerticalLayout>
-											<core:Icon
-												src="sap-icon://person-placeholder"
-												size="1.5rem"
-												color="Default" />
-											<Title
-												id="pessoa5Tile"
-												text="Ana"
-												level="H3"
-												titleStyle="H3"
-												class="sapUiTinyMarginTopBottom" />
-											<Text
-												text="..."
-												class="sapUiTinyMarginBottom"
-												size="0.6rem"
-											/>
-										</l:VerticalLayout>
-									</l:BlockLayoutCell>
-								</l:BlockLayoutRow>
-							</l:BlockLayout>
-						</content>
+						<Title text="Itens" level="H1" class="sapUiMediumMargin" />
+						<FlexBox wrap="Wrap" justifyContent="Start" class="sapUiSmallMargin">
+							<GenericTile class="itemTile sapUiSmallMargin" header="João">
+								<TileContent>
+									<Text
+										text="Geralmente responsável pelas compras."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Maria">
+								<TileContent>
+									<Text
+										text="Cuida do jardim aos sábados. Leva o cachorro para passear."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Pedro">
+								<TileContent>
+									<Text
+										text="Cuida dos irmãos no fim de semana e leva eles pra escola."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Lucas">
+								<TileContent>
+									<Text
+										text="..."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Ana">
+								<TileContent>
+									<Text
+										text="..."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+						</FlexBox>
 					</Panel>
 				</semantic:content>
 				<semantic:customFooterContent>
@@ -169,8 +92,18 @@
 							press="handlePersons" icon="sap-icon://family-care" />
 					</HBox>
 				</semantic:customFooterContent>
-				<Button id="AdicionarBtn" text="{i18n>Adicionar}" type="Transparent"
-				press="handlePersons" icon="sap-icon://family-care"/>
+				<m:VBox
+					alignItems="End"
+					justifyContent="End"
+					class="sapUiSmallMargin"
+					xmlns:m="sap.m">
+
+					<Button id="addBtn" icon="sap-icon://add" type="Emphasized"
+						class="addButton customSizeButton sapUiSmallMargin"
+						press="handleAddItem" />
+
+				</m:VBox>
+
 			</semantic:FullscreenPage>
 		</pages>
 	</App>
