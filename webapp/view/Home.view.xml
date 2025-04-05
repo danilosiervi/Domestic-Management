@@ -1,0 +1,94 @@
+<mvc:View 
+	controllerName="br.com.admcasa.admcasa.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:semantic="sap.m.semantic"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns:tnt="sap.tnt"
+    xmlns:core="sap.ui.core">
+    <App id="app">
+        <pages>
+            <semantic:FullscreenPage id="page" showFooter="true" class="textFade">
+                <tnt:ToolHeader id="homeHeader">
+                    <Button id="logonBtn" text="Login " type="Transparent" press="handleConnect" icon="sap-icon://visits" />
+                    <ToolbarSpacer />
+                    <Title id="homeTitle" level="H1" class="bold sapUiMediumMarginEnd" text="{i18n>HomeTitle}" />
+                    <ToolbarSpacer />
+                    <core:Icon
+						class="sapUiTinyMarginEnd"
+						id="conectIcon"
+						src="sap-icon://overlay"
+						color="#B22202" />
+                </tnt:ToolHeader>
+                <semantic:content>
+					<Panel width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar height="3rem" class="homeBar sapUiTinyMarginTopBottom">
+								<Button id="syncBtn" tooltip="Atualizar Tabelas" icon="sap-icon://synchronize" type="Transparent" press="handleRefresh" enabled="false"/>
+								<Title text="Tarefas" class="separatorText"/>
+								<ToolbarSpacer/>
+								<Button class="italic" id="BtnUserEnv" tooltip="Usuário" text="" type="Transparent" press="handleBtnUser" enabled="false"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<List id="taskList" mode="SingleSelectMaster" itemPress="handleListItem" delete="handleDelete" growing="true" items="{TaskModel>/items}" noDataText="{i18n>noDataText}">
+								<items>
+									<CustomListItem class="listItem" type="Navigation">
+										<HBox justifyContent="SpaceBetween" class="sapUiSmallMarginBegin">
+											<VBox class="sapUiTinyMarginTopBottom" width="100%">
+												<HBox alignItems="Center" width="100%" justifyContent="SpaceBetween" class="sapUiTinyMarginBottom">
+													<VBox>
+														<HBox>
+															<Text class="bold sapUiTinyMarginEnd" text="{i18n>Tasknum}:"/>
+															<Text id="seqTask" text="{
+																parts: ['TaskModel>NumTask', 'TaskModel>SeqNum'],
+																formatter: '.formatter.taskDraft'
+															}"/>
+														</HBox>
+													</VBox>
+													<VBox>
+														<HBox>
+															<Text class="bold sapUiTinyMarginEnd" text="{i18n>Atv}:"/>
+															<Text id="ativNum" text="{TaskModel>Atividade}"/>
+														</HBox>
+													</VBox>
+												</HBox>
+												<HBox alignItems="Center" width="100%" justifyContent="SpaceBetween" class="sapUiTinyMarginBottom">
+													<Text id="userLogado" class="sapUiTinyMarginEnd" text="{TaskModel>Usuario}" />
+													<Text id="dataTarefa" text="{
+															path: 'TaskModel>DataTarefa',
+															formatter: '.formatter.formatDate'
+														}"/>
+												</HBox>
+												<ObjectStatus
+														id="listStatus"
+														class="bold"
+														text="{
+															path: 'TaskModel>StatusTask',
+															formatter: '.formatter.status'
+														}"
+														state="{
+															path: 'TaskModel>StatusTask',
+															formatter: '.formatter.statusState'
+														}" />
+											</VBox>
+										</HBox>
+									</CustomListItem>
+								</items>
+							</List>
+						</content>
+					</Panel>
+                </semantic:content>
+                <semantic:customFooterContent>
+                    <HBox id="footerHBox" justifyContent="SpaceAround" alignItems="Center" class="sapUiSmallMarginBeginEnd" width="100%">
+                        <Button id="ItensBtn"   text="{i18n>Itens}" type="Default" press="handleItems" icon="sap-icon://fridge" />
+                        <Button id="TarefasBtn" text="{i18n>Tarefas}" type="Transparent" press="handleTasks" icon="sap-icon://activities" />
+                        <Button id="PessoasBtn" text="{i18n>Pessoas}" type="Transparent" press="handlePersons" icon="sap-icon://family-care" />
+                    </HBox>
+                </semantic:customFooterContent>
+            </semantic:FullscreenPage>
+        </pages>
+    </App>
+</mvc:View>

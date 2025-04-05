@@ -1,0 +1,21 @@
+<mvc:View 
+    controllerName="br.com.admcasa.admcasa.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic"
+>
+    <App id="app">
+		<pages>
+			<semantic:FullscreenPage
+				id="page"
+				showFooter="false"
+			>
+				<FlexBox id="busyIndicatorSplash" width="100%" height="100%" justifyContent="Center" alignItems="Center" alignContent="Center" direction="Column">
+					<!-- <Image id="img" src="images/Imagen.png" height="128px"/> -->
+					<BusyIndicator id="busyIndicator" size="1rem"/>
+				</FlexBox>
+			</semantic:FullscreenPage>
+		</pages>
+	</App>
+</mvc:View>
