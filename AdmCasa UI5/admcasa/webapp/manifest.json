@@ -36,9 +36,9 @@
         "flexEnabled": true,
         "async": true,
         "rootView": {
-            "viewName": "br.com.admcasa.admcasa.view.App",
+            "viewName": "br.com.admcasa.admcasa.view.Home",
             "type": "XML",
-            "id": "App",
+            "id": "Home",
             "async": true
         },
         "dependencies": {
@@ -79,8 +79,7 @@
                 "viewType": "XML",
                 "path": "br.com.admcasa.admcasa.view",
                 "async": true,
-                "viewPath": "br.com.admcasa.admcasa.view",
-				"clearControlAggregation": false,
+                "clearControlAggregation": false,
 				"bypassed": {
 					"target": "notFound"
 				}
@@ -91,6 +90,27 @@
 					"pattern": "",
 					"target": [
 						"TargetHome"
+					]
+				},
+				{
+					"name": "Tasks",
+					"pattern": "",
+					"target": [
+						"TargetTasks"
+					]
+				},
+				{
+					"name": "Items",
+					"pattern": "",
+					"target": [
+						"TargetItems"
+					]
+				},
+				{
+					"name": "Person",
+					"pattern": "",
+					"target": [
+						"TargetPerson"
 					]
 				},
 				{
@@ -108,6 +128,30 @@
 					"clearControlAggregation": false,
 					"viewId": "Home",
 					"viewName": "Home",
+					"viewLevel": 2
+				},
+                "TargetTasks": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "Tasks",
+					"viewName": "Tasks",
+					"viewLevel": 2
+				},
+                "TargetItems": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "Items",
+					"viewName": "Items",
+					"viewLevel": 2
+				},
+                "TargetPerson": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "Person",
+					"viewName": "Person",
 					"viewLevel": 2
 				},
                 "TargetApp": {

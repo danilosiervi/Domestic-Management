@@ -83,7 +83,7 @@
                 </semantic:content>
                 <semantic:customFooterContent>
                     <HBox id="footerHBox" justifyContent="SpaceAround" alignItems="Center" class="sapUiSmallMarginBeginEnd" width="100%">
-                        <Button id="ItensBtn"   text="{i18n>Itens}" type="Default" press="handleItems" icon="sap-icon://fridge" />
+                        <Button id="ItensBtn"   text="{i18n>Itens}"   	type="Default" press="handleItems" icon="sap-icon://fridge" />
                         <Button id="TarefasBtn" text="{i18n>Tarefas}" type="Transparent" press="handleTasks" icon="sap-icon://activities" />
                         <Button id="PessoasBtn" text="{i18n>Pessoas}" type="Transparent" press="handlePersons" icon="sap-icon://family-care" />
                     </HBox>

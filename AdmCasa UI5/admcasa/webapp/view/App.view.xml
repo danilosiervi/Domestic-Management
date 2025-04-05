@@ -5,7 +5,7 @@
 	xmlns="sap.m"
 	xmlns:semantic="sap.m.semantic"
 >
-    <App id="app">
+    <App id="Splahs">
 		<pages>
 			<semantic:FullscreenPage
 				id="page"

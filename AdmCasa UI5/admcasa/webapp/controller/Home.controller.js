@@ -17,7 +17,8 @@ sap.ui.define(
         "sap/m/HBox",
         "sap/ui/core/Icon",
         "sap/m/ButtonType",
-        "br/com/admcasa/admcasa/model/formatter"
+        "br/com/admcasa/admcasa/model/formatter",
+        "sap/m/library"
     ], (
         BaseController,
         Core,
@@ -36,7 +37,8 @@ sap.ui.define(
         HBox,
         Icon,
         ButtonType,
-        formatter
+        formatter, 
+        library
     ) => {
         "use strict";
         var nIntervId = undefined;
@@ -68,16 +70,16 @@ sap.ui.define(
                 // if (!nIntervId) nIntervId = setInterval(this.jobRefresh.bind(this), 50000);
 
                 
-                this.getLocalStorage();
-                this.handleRefreshView();
-                this.setConnectIcon();
+                // this.getLocalStorage();
+                // // this.handleRefreshView();
+                // this.setConnectIcon();
             },
 
             handleListItem: function (oEvent) {
                 
             },
 
-            handleRefresh: async function (source) {
+            handleRefreshView: async function (source) {
                 var isNotConnected = 0;
 
                 if (isNotConnected != 1) {
@@ -104,6 +106,20 @@ sap.ui.define(
                     oView.byId("conectIcon").setColor("#B22202");
                 }
             },
+
+            handleItems: function () {
+                this.getRouter().navTo("Items");
+            },
+
+            handleTasks: function () {
+                this.getRouter().navTo("Tasks");
+            },
+            
+            handlePersons: function () {
+                this.getRouter().navTo("Person");
+            },
+            
+
 
         });
     }
