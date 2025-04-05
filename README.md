@@ -91,6 +91,11 @@ A Domestic Management é uma aplicação focada em simplificar e centralizar a g
 # **Protótipo (Figma)**
 Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prototype?t=hgdihqDdCtlQvtqy-1>
 
+<img src="Imagens-Figma/Home.jpg" alt="Protótipo da página Home no Figma" >
+<img src="Imagens-Figma/Itens.jpg" alt="Protótipo da página Itens no Figma" >
+<img src="Imagens-Figma/Pessoas.jpg" alt="Protótipo da página Pessoas no Figma" >
+<img src="Imagens-Figma/Tarefas.jpg" alt="Protótipo da página Tarefas no Figma" >
+
 # **Diagramas UML**
 
 ## **Diagrama UML (Casos de uso)** 
@@ -112,3 +117,7 @@ Link: <https://www.figma.com/design/wdhPV5poco9GLevSWjOuNb/Domestic-Manager-Prot
 <img src="Diagramas-UML/Diagrama-Atividades(Designar-Tarefa).png" alt="Diagrama de Atividades (Designar Tarefas)">
 
 ## **Diagrama UML (Classes)** 
+
+<img src="Diagramas-UML/Diagrama-de-Classes.png" alt="Diagrama de Classes">
+
+
