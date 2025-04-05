@@ -1,0 +1,110 @@
+<mvc:View
+	controllerName="br.com.admcasa.admcasa.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns:semantic="sap.m.semantic"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:tnt="sap.tnt"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+>
+	<App id="app">
+		<pages>
+			<semantic:FullscreenPage id="page" showFooter="true" class="textFade">
+				<tnt:ToolHeader id="homeHeader">
+					<Button id="logonBtn" text="Login " type="Transparent" press="handleConnect"
+						icon="sap-icon://visits" />
+					<ToolbarSpacer />
+					<Title id="homeTitle" level="H1" class="bold sapUiMediumMarginEnd"
+						text="{i18n>HomeTitle}" />
+					<ToolbarSpacer />
+					<core:Icon
+						class="sapUiTinyMarginEnd"
+						id="conectIcon"
+						src="sap-icon://overlay"
+						color="#B22202" />
+				</tnt:ToolHeader>
+				<semantic:content>
+					<Panel width="auto" class="sapUiResponsiveMargin">
+						<Title text="Itens" level="H1" class="sapUiMediumMargin" />
+						<FlexBox wrap="Wrap" justifyContent="Start" class="sapUiSmallMargin">
+							<GenericTile class="itemTile sapUiSmallMargin" header="João">
+								<TileContent>
+									<Text
+										text="Geralmente responsável pelas compras."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Maria">
+								<TileContent>
+									<Text
+										text="Cuida do jardim aos sábados. Leva o cachorro para passear."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Pedro">
+								<TileContent>
+									<Text
+										text="Cuida dos irmãos no fim de semana e leva eles pra escola."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Lucas">
+								<TileContent>
+									<Text
+										text="..."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+
+							<GenericTile class="itemTile sapUiSmallMargin" header="Ana">
+								<TileContent>
+									<Text
+										text="..."
+										class="sapUiTinyMarginBottom"
+										size="0.6rem"
+									/>
+								</TileContent>
+							</GenericTile>
+						</FlexBox>
+					</Panel>
+				</semantic:content>
+				<semantic:customFooterContent>
+					<HBox id="footerHBox" justifyContent="SpaceAround" alignItems="Center"
+						class="sapUiSmallMarginBeginEnd" width="100%">
+						<Button id="ItensBtn" text="{i18n>Itens}" type="Default" press="handleItems"
+							icon="sap-icon://fridge" />
+						<Button id="TarefasBtn" text="{i18n>Tarefas}" type="Transparent"
+							press="handleTasks" icon="sap-icon://activities" />
+						<Button id="PessoasBtn" text="{i18n>Pessoas}" type="Transparent"
+							press="handlePersons" icon="sap-icon://family-care" />
+					</HBox>
+				</semantic:customFooterContent>
+				<m:VBox
+					alignItems="End"
+					justifyContent="End"
+					class="sapUiSmallMargin"
+					xmlns:m="sap.m">
+
+					<Button id="addBtn" icon="sap-icon://add" type="Emphasized"
+						class="addButton customSizeButton sapUiSmallMargin"
+						press="handleAddItem" />
+
+				</m:VBox>
+
+			</semantic:FullscreenPage>
+		</pages>
+	</App>
+</mvc:View>
